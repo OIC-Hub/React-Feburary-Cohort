@@ -4,6 +4,7 @@ import NavBar from './components/navBar';
 import Footer from './components/footer';
 import ProfileCard from './components/profileCard';
 import Counter from './components/counter';
+import { Data } from './components/data';
 function App() {
 
   const team = [
@@ -43,6 +44,8 @@ function App() {
       />
     ))}
     </div>
+
+    <Data/>
 
     <Footer/>
 
