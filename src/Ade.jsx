@@ -5,6 +5,8 @@ import Footer from './components/footer';
 import ProfileCard from './components/profileCard';
 import Counter from './components/counter';
 import { Data } from './components/data';
+import Effect from './components/effect';
+import Timer from './components/timer';
 function App() {
 
   const team = [
@@ -33,7 +35,9 @@ function App() {
   return (
     <>
     <NavBar/>
-    
+    <Effect/>
+
+    <Timer/>
     <div className="profile-container">
      {team.map((teammember, index) => (
       <ProfileCard 
