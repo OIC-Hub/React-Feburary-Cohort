@@ -7,6 +7,7 @@ import Counter from './components/counter';
 import { Data } from './components/data';
 import Effect from './components/effect';
 import Timer from './components/timer';
+import Fetch from "./components/Fetch"
 function App() {
 
   const team = [
@@ -54,6 +55,8 @@ function App() {
     <Footer/>
 
     <Counter/>
+
+    <Fetch/>
     </>
   )
 }
