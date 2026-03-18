@@ -12,6 +12,7 @@ import { UserProfile } from './components/userProfile';
 import { Routes, Route } from 'react-router-dom';
 import { NotFound } from './components/NotFound';
 import { Users } from './components/user';
+import { PageNavigate } from './components/Navigate';
 function App() {
 
   // const team = [
@@ -70,6 +71,7 @@ function App() {
         <Route path="*" element={<NotFound/>}/>
         <Route path='/user/:id' element={<UserProfile/>}/>
         <Route path='/users' element={<Users/>}/>
+        <Route path='/navigate' element={<PageNavigate/>}/>
         
     </Routes>
 
