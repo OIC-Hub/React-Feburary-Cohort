@@ -41,39 +41,16 @@ function App() {
   return (
     
     <>
-    {/* <NavBar/>
-    <Effect/>
-
-    <Timer/>
-    <div className="profile-container">
-     {team.map((teammember, index) => (
-      <ProfileCard 
-        key={index}
-        name={teammember.name}
-        role={teammember.role}
-        avatar={teammember.avatar}
-      />
-    ))}
-    </div>
-
-    <Data/>
-
-    <Footer/>
-
-    <Counter/>
-
-    <Fetch/>
-    </> */}
+    <NavBar />
 
     <Routes>
+        <Route path='/' element={<Fetch/>}/>
         <Route path='/count' element={<Counter/>}/>
-        <Route path="/data" element={<Data/>}/>
-        <Route path="*" element={<NotFound/>}/>
+        <Route path='/data' element={<Data/>}/>
         <Route path='/user/:id' element={<UserProfile/>}/>
         <Route path='/users' element={<Users/>}/>
         <Route path='/navigate' element={<PageNavigate/>}/>
-        <Route path='/' element={<Fetch/>}/>
-        
+        <Route path='*' element={<NotFound/>}/>
     </Routes>
 
     </>
