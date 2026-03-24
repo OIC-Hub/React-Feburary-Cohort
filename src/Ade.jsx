@@ -72,6 +72,7 @@ function App() {
         <Route path='/user/:id' element={<UserProfile/>}/>
         <Route path='/users' element={<Users/>}/>
         <Route path='/navigate' element={<PageNavigate/>}/>
+        <Route path='/' element={<Fetch/>}/>
         
     </Routes>
 
