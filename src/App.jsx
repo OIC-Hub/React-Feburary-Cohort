@@ -13,6 +13,7 @@ import { Routes, Route } from 'react-router-dom';
 import { NotFound } from './components/NotFound';
 import { Users } from './components/user';
 import { PageNavigate } from './components/Navigate';
+import {Register} from "./components/Register"
 function App() {
 
   // const team = [
@@ -47,10 +48,13 @@ function App() {
         <Route path='/' element={<Fetch/>}/>
         <Route path='/count' element={<Counter/>}/>
         <Route path='/data' element={<Data/>}/>
+        <Route path='/form' element={<Register/>}/>
+
         <Route path='/user/:id' element={<UserProfile/>}/>
         <Route path='/users' element={<Users/>}/>
         <Route path='/navigate' element={<PageNavigate/>}/>
         <Route path='*' element={<NotFound/>}/>
+
     </Routes>
 
     </>
