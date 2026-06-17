@@ -1,4 +1,4 @@
-# Day 9 — React Router (v6)
+# Day 6 — React Router (v6)
 
 ---
 
